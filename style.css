@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #341e45;
+  --secondary-color: #ffbf1b;
+  --light: white;
+
+  --primary-font: "Jockey One", sans-serif;
+  --secondary-font: "Jacques Francois", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--primary-font);
+}
+
+/* HEADER */
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: relative;
+  margin-bottom: -0.5rem;
+  padding-bottom: 0;
+}
+
+header h1 {
+  color: var(--primary-color);
+  font-size: clamp(2rem, 6vw, 7rem);
+  text-shadow: 0 0 1em var(--secondary-color);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+header h2 {
+  color: var(--light);
+  font-size: clamp(1rem, 3vw, 4rem);
+  position: absolute;
+  right: 12%;
+  bottom: 40%;
+}
+
+header h3 {
+  color: var(--light);
+  font-size: clamp(1rem, 2.5vw, 3rem);
+  background-color: var(--primary-color);
+  padding: 0.5vw 4.5vw;
+  border-radius: 3rem;
+  position: absolute;
+  bottom: 24%;
+  right: 18%;
+}
+
+/* MAIN */
+main {
+  background-color: var(--primary-color);
+  padding: 7% 1%;
+}
+
+main h1 {
+  color: var(--light);
+  text-align: center;
+  font-size: clamp(1.2rem, 5.5vw, 6rem);
+  margin-bottom: 3%;
+}
+
+.container {
+  border: 3px solid var(--secondary-color);
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2%;
+}
+
+.container article {
+  width: 45%;
+  height: 50vw;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container article img {
+  border: 2vw solid var(--primary-color);
+  border-radius: 50%;
+  width: 22vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.description {
+  background-color: white;
+  text-align: center;
+  width: 32vw;
+  height: 32vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 14vw;
+}
+
+.description h2 {
+  color: var(--primary-color);
+  font-size: clamp(0.8rem, 3.5vw, 4.5rem);
+  padding-top: 30%;
+}
+
+.description p {
+  font-family: var(--secondary-font);
+  font-size: clamp(0.5rem, 1.4vw, 2rem);
+  text-align: justify;
+  padding: 4% 15%;
+}
+
+.container article h3 {
+  background-color: var(--secondary-color);
+  font-size: clamp(0.8rem, 3.5vw, 4.5rem);
+  color: var(--primary-color);
+  padding: 4% 21%;
+  position: absolute;
+  z-index: 2;
+  top: 42vw;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container article {
+    width: 100%;
+    height: 75vw;
+  }
+
+  .container article img {
+    width: 33vw;
+    /* margin: 1rem 0rem; */
+  }
+
+  .description {
+    width: 48vw;
+    height: 48vw;
+    top: 20vw;
+  }
+
+  .container article h3 {
+    top: 63vw;
+  }
+}
