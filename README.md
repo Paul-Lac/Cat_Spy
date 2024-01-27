@@ -1,10 +1,16 @@
-#CAT SPY
+# CAT SPY
 
 ## OVERVIEW
 
-This page was developped during my first week of my Web Developer bootcamp at the Wild Code School. The aim of the exercise was to reproduce a model provided on Figma, with a responsive design.
+This repository was created during the first week of the Web Developer bootcamp at the Wild Code School. The objective of this exercise was to replicate a model provided on Figma, incorporating a responsive design.
+
+![Screenshot of the model](images/Maquette.png)
 
 ## TECHNOLOGIES USED
 
 - HTML5
 - CSS3
+
+## ACCESS TO THE PAGE
+
+The deployed page is accessible here: https://paul-lac.github.io/Cat_Spy/
